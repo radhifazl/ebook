@@ -1,3 +1,13 @@
+const webLoader = document.getElementById('loader-wrapper');
+
+
+window.addEventListener('load', () => {
+    setTimeout(function() {
+        webLoader.parentElement.removeChild(webLoader);
+    }, 3000)
+})
+
+
 const navMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
